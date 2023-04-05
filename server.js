@@ -2,7 +2,7 @@ const express = require('express');
 const router = require('./routes');
 
 const app = express();
-const port = parseInt(process.env.PORT, 10) || 5000;
+const port = parseInt(process.env.PORT, 10) || 6379;
 
 app.use('/status', router);
 app.use('/stats', router);
